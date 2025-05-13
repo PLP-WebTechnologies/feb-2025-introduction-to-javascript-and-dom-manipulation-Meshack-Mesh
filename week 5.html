@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Interaction Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Now This Is it</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Dynamic Text Section</h2>
+      <p id="text">Click the button below to change this paragraph.</p>
+      <button onclick="changeContent()">Change Content</button>
+    </section>
+
+    <section>
+      <h2>Element Toggler</h2>
+      <button onclick="toggleElement()">Toggle Message</button>
+    </section>
+
+    <section>
+      <h2>Change Background</h2>
+      <button onclick="changeBackground()">Change Background Color</button>
+    </section>
+
+    <section>
+      <h2>User Greeting</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name"/>
+      <button onclick="greetUser()">Greet Me</button>
+      <p id="greeting"></p>
+    </section>
+
+    <section>
+      <h2>Dynamic List</h2>
+      <input type="text" id="itemInput" placeholder="Add item"/>
+      <button onclick="addItem()">Add</button>
+      <ul id="itemList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Interactive Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
